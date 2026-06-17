@@ -177,6 +177,17 @@ Sales_predictions_thesis_project/
 
 ## Autor
 
-Proiect de licenta dezvoltat de **[numele tau]**.
+Lupu Ion
 
-<!-- NOTA: completeaza numele tau si, optional, universitatea / coordonatorul -->
+Proiect de licență dezvoltat în cadrul Universității Ștefan cel Mare din Suceava,
+Facultatea de Economie și Administrarea Afacerilor, specializarea Informatică Economică.
+
+Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) in managementul unei firme de succes
+Coordonator științific: Lect. univ. dr. Paul PAȘCU
+
+## Licență
+
+© 2026 Lupu Ion. Toate drepturile rezervate.
+
+Acest proiect a fost realizat ca parte a unei lucrări de licență și este publicat
+în scop educațional și demonstrativ.
