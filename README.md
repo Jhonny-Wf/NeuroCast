@@ -153,9 +153,7 @@ Aplicatia citeste primul sheet dintr-un fisier Excel (.xlsx), incepand cu al doi
 | Pret mediu | 4 | Pretul mediu de vanzare |
 | Vanzari | 5 | Vanzarile realizate (valoarea pe care modelul o invata) |
 
-Un fisier de date exemplu (cu date fictive) este inclus in repository pentru testare rapida.
-
-<!-- NOTA: daca adaugi un fisier exemplu, mentioneaza aici numele lui, ex: date_test_exemplu.xlsx -->
+Fisierul `date_fictive_vanzari.xlsx` (cu date fictive) este inclus in repository pentru testare rapida. Il poti incarca direct din aplicatie, din tab-ul Gestiune & Antrenare.
 
 ---
 

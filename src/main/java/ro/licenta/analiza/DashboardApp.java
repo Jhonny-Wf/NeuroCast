@@ -3974,35 +3974,15 @@ public class DashboardApp extends Application {
                 return;
             }
 
-            // Normalizăm input-urile și le limităm la intervalul [0,1]
-
+            // Normalizam input-urile
             double lunaNorm = Math.min(Math.max(lunaDeBaza / rn.factorLuna, 0.0), 1.0);
             double sezonNorm = Math.min(Math.max(sezonDeBaza / rn.factorSezon, 0.0), 1.0);
             double bugetNorm = Math.min(Math.max(bugetScenariu / rn.factorBuget, 0.0), 1.0);
             double pretNorm = Math.min(Math.max(pretScenariu / rn.factorPret, 0.0), 1.0);
+            
             double[] inputScenariu = { lunaNorm, sezonNorm, bugetNorm, pretNorm };
-
-            System.out.println("Vector input normalizat (după clipping): " + java.util.Arrays.toString(inputScenariu));
-
-            // Testăm și predicția pentru buget minim (0) pentru comparație
-            double[] inputMinim = { lunaNorm, sezonNorm, 0.0, pretNorm };
-            double[] predMinim = rn.prezice(inputMinim);
-            System.out.println("Predicție pentru buget minim (0): " + java.util.Arrays.toString(predMinim) + " = "
-                    + (predMinim[0] * rn.factorVanzari) + "€");
-
             double[] predScenariu = rn.prezice(inputScenariu);
-
-            System.out.println("Predicție normalizată (buget maxim 1.0): " + java.util.Arrays.toString(predScenariu));
-            System.out.println("Factor vânzări: " + rn.factorVanzari);
-
             double vanzariScenariu = predScenariu[0] * rn.factorVanzari;
-
-            System.out.println("Vânzări scenariu finale: " + vanzariScenariu);
-            System.out.println("Vânzări actuale (din fișier): " + vanzariActual);
-            System.out.println("Diferență: " + (vanzariScenariu - vanzariActual));
-            System.out.println("NOTĂ: Diferențele mici (sub 1-2%) sunt normale pentru sistemele de predicție.");
-            System.out.println("Rețeaua învață din datele reale și face estimări bazate pe pattern-uri.");
-            System.out.println("============================");
 
             // Asigurăm că vânzările scenariului nu sunt 0 sau foarte mici
             if (vanzariScenariu == 0 || Double.isNaN(vanzariScenariu) || Double.isInfinite(vanzariScenariu)) {
