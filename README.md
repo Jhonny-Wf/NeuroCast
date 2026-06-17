@@ -132,7 +132,7 @@ Vizualizezi grafic indicatorii economici și istoricul extras din fișierul Exce
 ![Pasul 6 - Dashboard economic](screenshots/pas6-dashboard.png)
 
 ### Pasul 7 — Exportul datelor
-Generezi un raport profesional în format PDF cu toate graficele, analizele și predicțiile.
+Generezi un raport profesional în format PDF sau CSV cu toate graficele, analizele și predicțiile.
 
 ![Pasul 7 - Exportul datelor](screenshots/pas7-export.png)
 
@@ -150,6 +150,7 @@ Aplicația citește primul sheet dintr-un fișier Excel (.xlsx), începând cu a
 | Buget marketing | 3 | Bugetul de marketing alocat |
 | Preț mediu | 4 | Prețul mediu de vânzare |
 | Vânzări | 5 | Vânzările realizate (valoarea pe care modelul o învață) |
+| Nr. clienți | 6 | Numărul de clienți |
 
 ![formatul fișierului Excel](screenshots/format_date.png)
 
@@ -177,13 +178,12 @@ Sales_predictions_thesis_project/
 
 ## Autor
 
-Lupu Ion
+Lupu Ion 
 
 Proiect de licență dezvoltat în cadrul Universității "Ștefan cel Mare" din Suceava,
 Facultatea de Economie și Administrarea Afacerilor, specializarea Informatică Economică.
 
 Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) în managementul unei firme de succes
-
 Coordonator științific: Lect. univ. dr. Paul PAȘCU
 
 ## Licență
