@@ -1,0 +1,305 @@
+/* =====================================================
+   style.css — Tema Dark Mode pentru Sales AI Workspace
+   Aplicata exclusiv pe .dark-theme (contentArea)
+   ===================================================== */
+
+/* ── Radacina contentArea ── */
+.dark-theme {
+    -fx-background-color: #0f172a;
+}
+
+/* ── ScrollPane + Viewport (cel mai important — acoperire zone albe) ── */
+.dark-theme.scroll-pane {
+    -fx-background-color: #0f172a;
+    -fx-background: #0f172a;
+}
+.dark-theme.scroll-pane > .viewport,
+.dark-theme .scroll-pane > .viewport {
+    -fx-background-color: #0f172a;
+}
+.dark-theme .scroll-pane {
+    -fx-background-color: #0f172a;
+    -fx-background: #0f172a;
+}
+.dark-theme .scroll-pane > .viewport {
+    -fx-background-color: #0f172a;
+}
+
+/* ── Scrollbar interior ── */
+.dark-theme .scroll-bar {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .scroll-bar .thumb {
+    -fx-background-color: #475569;
+    -fx-background-radius: 4;
+}
+.dark-theme .scroll-bar .track {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .scroll-bar .increment-button,
+.dark-theme .scroll-bar .decrement-button {
+    -fx-background-color: #1e293b;
+}
+
+/* ── Label-uri si Text ── */
+.dark-theme .label {
+    -fx-text-fill: #f1f5f9;
+}
+.dark-theme .text {
+    -fx-fill: #f1f5f9;
+}
+
+/* ── Fundal VBox / HBox / StackPane / AnchorPane (fara style inline) ── */
+.dark-theme .vbox,
+.dark-theme .hbox,
+.dark-theme .stack-pane,
+.dark-theme .anchor-pane {
+    -fx-background-color: transparent;
+}
+
+/* ── TextField, TextArea ── */
+.dark-theme .text-field,
+.dark-theme .text-area,
+.dark-theme .text-area .content {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f1f5f9;
+    -fx-prompt-text-fill: #64748b;
+    -fx-border-color: #475569;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* ── ComboBox / ChoiceBox ── */
+.dark-theme .combo-box,
+.dark-theme .combo-box-base {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #475569;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+.dark-theme .combo-box .list-cell,
+.dark-theme .combo-box-base > .label {
+    -fx-text-fill: #f1f5f9;
+    -fx-background-color: transparent;
+}
+.dark-theme .combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.dark-theme .combo-box .arrow {
+    -fx-background-color: #94a3b8;
+}
+.dark-theme .combo-box-popup .list-view {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #475569;
+}
+.dark-theme .combo-box-popup .list-cell {
+    -fx-text-fill: #f1f5f9;
+    -fx-background-color: #1e293b;
+}
+.dark-theme .combo-box-popup .list-cell:filled:hover,
+.dark-theme .combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #334155;
+    -fx-text-fill: #f1f5f9;
+}
+
+/* ── ListView ── */
+.dark-theme .list-view {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #334155;
+}
+.dark-theme .list-view .list-cell {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f1f5f9;
+}
+.dark-theme .list-view .list-cell:odd {
+    -fx-background-color: #182235;
+}
+.dark-theme .list-view .list-cell:selected,
+.dark-theme .list-view .list-cell:filled:selected {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+}
+
+/* ── TableView ── */
+.dark-theme .table-view {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #334155;
+    -fx-background-radius: 8;
+}
+.dark-theme .table-view > .virtual-flow > .clipped-container > .sheet > .table-row-cell {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .table-view .column-header,
+.dark-theme .table-view .column-header-background {
+    -fx-background-color: #0f172a;
+}
+.dark-theme .table-view .column-header .label {
+    -fx-text-fill: #94a3b8;
+    -fx-font-weight: bold;
+}
+.dark-theme .table-view .table-row-cell {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f1f5f9;
+    -fx-border-color: transparent transparent #243044 transparent;
+}
+.dark-theme .table-view .table-row-cell:odd {
+    -fx-background-color: #182235;
+}
+.dark-theme .table-view .table-row-cell:selected {
+    -fx-background-color: #2563eb;
+}
+.dark-theme .table-view .table-row-cell:selected .label {
+    -fx-text-fill: white;
+}
+.dark-theme .table-view .table-cell {
+    -fx-text-fill: #f1f5f9;
+    -fx-border-color: transparent;
+}
+/* Placeholder (tabel gol) */
+.dark-theme .table-view .placeholder {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .table-view .placeholder .label {
+    -fx-text-fill: #64748b;
+}
+
+/* ── TabPane ── */
+.dark-theme .tab-pane {
+    -fx-background-color: #0f172a;
+}
+.dark-theme .tab-pane > .tab-header-area {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .tab {
+    -fx-background-color: #334155;
+    -fx-background-radius: 6 6 0 0;
+}
+.dark-theme .tab:hover {
+    -fx-background-color: #475569;
+}
+.dark-theme .tab:selected {
+    -fx-background-color: #3b82f6;
+}
+.dark-theme .tab .tab-label {
+    -fx-text-fill: #cbd5e1;
+}
+.dark-theme .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+.dark-theme .tab-pane > .tab-content-area {
+    -fx-background-color: #0f172a;
+}
+
+/* ── Grafice (Charts) ── */
+.dark-theme .chart {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 12;
+    -fx-padding: 15;
+}
+.dark-theme .chart-content {
+    -fx-background-color: #1e293b;
+}
+.dark-theme .chart-title {
+    -fx-text-fill: #f1f5f9;
+}
+.dark-theme .axis {
+    -fx-tick-label-fill: #94a3b8;
+}
+.dark-theme .axis-label {
+    -fx-text-fill: #94a3b8;
+}
+.dark-theme .chart-plot-background {
+    -fx-background-color: #0f172a;
+}
+.dark-theme .chart-vertical-grid-lines {
+    -fx-stroke: #1e293b;
+}
+.dark-theme .chart-horizontal-grid-lines {
+    -fx-stroke: #1e293b;
+}
+.dark-theme .chart-legend {
+    -fx-background-color: #334155;
+    -fx-background-radius: 8;
+}
+.dark-theme .chart-legend-item {
+    -fx-text-fill: #cbd5e1;
+}
+
+/* ── Butoane standard ── */
+.dark-theme .button {
+    -fx-background-color: #334155;
+    -fx-text-fill: #f1f5f9;
+    -fx-background-radius: 8;
+}
+.dark-theme .button:hover {
+    -fx-background-color: #475569;
+}
+.dark-theme .button:pressed {
+    -fx-background-color: #1e293b;
+}
+
+/* ── CheckBox, RadioButton ── */
+.dark-theme .check-box .box,
+.dark-theme .radio-button .radio {
+    -fx-background-color: #334155;
+    -fx-border-color: #475569;
+}
+.dark-theme .check-box:selected .box,
+.dark-theme .radio-button:selected .radio {
+    -fx-background-color: #3b82f6;
+    -fx-border-color: #3b82f6;
+}
+.dark-theme .check-box .text,
+.dark-theme .radio-button .text {
+    -fx-fill: #f1f5f9;
+}
+
+/* ── Slider ── */
+.dark-theme .slider .track {
+    -fx-background-color: #334155;
+}
+.dark-theme .slider .thumb {
+    -fx-background-color: #3b82f6;
+}
+
+/* ── ProgressBar ── */
+.dark-theme .progress-bar {
+    -fx-background-color: #334155;
+    -fx-background-radius: 5;
+}
+.dark-theme .progress-bar .bar {
+    -fx-background-color: #3b82f6;
+    -fx-background-radius: 5;
+}
+
+/* ── Tooltip ── */
+.dark-theme .tooltip {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f1f5f9;
+    -fx-border-color: #475569;
+}
+
+/* ── ContextMenu / MenuButton ── */
+.dark-theme .context-menu {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #475569;
+}
+.dark-theme .menu-item {
+    -fx-background-color: transparent;
+}
+.dark-theme .menu-item .label {
+    -fx-text-fill: #f1f5f9;
+}
+.dark-theme .menu-item:focused,
+.dark-theme .menu-item:hover {
+    -fx-background-color: #334155;
+}
+
+/* ── Separator ── */
+.dark-theme .separator .line {
+    -fx-border-color: #334155;
+    -fx-border-width: 1 0 0 0;
+}
