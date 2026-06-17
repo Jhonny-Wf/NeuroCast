@@ -1,6 +1,6 @@
 # NeuroCast
 
-Sistem de previziune a vanzarilor bazat pe Retele Neuronale Artificiale (RNA), dezvoltat ca proiect de licenta. Aplicatia permite incarcarea istoricului de vanzari dintr-un fisier Excel, antrenarea unei retele neuronale direct din interfata si generarea de predictii economice și un simulator de scenarii, insotite de un dashboard interactiv si export de fișiere.
+Sistem de previziune a vânzărilor bazat pe Rețele Neuronale Artificiale (RNA), dezvoltat ca proiect de licență. Aplicația permite încărcarea istoricului de vânzări dintr-un fișier Excel, antrenarea unei rețele neuronale direct din interfață și generarea de predicții economice și un simulator de scenarii, însoțite de un dashboard interactiv și export de fișiere.
 
 ---
 
@@ -9,11 +9,11 @@ Sistem de previziune a vanzarilor bazat pe Retele Neuronale Artificiale (RNA), d
 - [Descriere](#descriere)
 - [Tehnologii utilizate](#tehnologii-utilizate)
 - [Capturi de ecran](#capturi-de-ecran)
-- [Cerinte de sistem](#cerinte-de-sistem)
-- [Instalare si rulare (utilizator final)](#instalare-si-rulare-utilizator-final)
-- [Rulare din codul sursa (dezvoltator)](#rulare-din-codul-sursa-dezvoltator)
+- [Cerințe de sistem](#cerinte-de-sistem)
+- [Instalare și rulare (utilizator final)](#instalare-si-rulare-utilizator-final)
+- [Rulare din codul sursă (dezvoltator)](#rulare-din-codul-sursa-dezvoltator)
 - [Ghidul interactiv pas cu pas](#ghidul-interactiv-pas-cu-pas)
-- [Formatul fisierului de date](#formatul-fisierului-de-date)
+- [Formatul fișierului de date](#formatul-fisierului-de-date)
 - [Structura proiectului](#structura-proiectului)
 - [Autor](#autor)
 
@@ -21,24 +21,24 @@ Sistem de previziune a vanzarilor bazat pe Retele Neuronale Artificiale (RNA), d
 
 ## Descriere
 
-Aplicatia este construita in jurul a doua componente principale:
+Aplicația este construită în jurul a două componente principale:
 
-1. **Dashboard analitic** — afiseaza datele economice ale firmei (vanzari lunare, buget de marketing, pret mediu, sezonalitate) incarcate dintr-un fisier Excel, sub forma de grafice interactive, indicatori de performanta si comparatii intre ani.
-2. **Modul de previziune** — o retea neuronala artificiala implementata de la zero, care invata din datele istorice si permite generarea de prognoze, simularea de scenarii si optimizarea bugetului in functie de o tinta de vanzari.
+1. **Dashboard analitic** — afișează datele economice ale firmei (vânzări lunare, buget de marketing, preț mediu, sezonalitate) încărcate dintr-un fișier Excel, sub formă de grafice interactive, indicatori de performanță și comparații între ani.
+2. **Modul de previziune** — o rețea neuronală artificială implementată de la zero, care învață din datele istorice și permite generarea de prognoze, simularea de scenarii și optimizarea bugetului în funcție de o țintă de vânzări.
 
-Reteaua poate fi antrenata si reconfigurata direct din interfata (rata de invatare, numar de neuroni, momentum, functie de activare Sigmoid sau LeakyReLU), iar modelul antrenat poate fi salvat si reincarcat ulterior.
+Rețeaua poate fi antrenată și reconfigurată direct din interfață (rata de învățare, număr de neuroni, momentum, funcție de activare Sigmoid sau LeakyReLU), iar modelul antrenat poate fi salvat și reîncărcat ulterior.
 
 ---
 
 ## Tehnologii utilizate
 
-- **Java 17** — limbajul de baza
-- **JavaFX 17.0.2** — interfata grafica si graficele interactive
-- **Apache POI 5.2.3** — citirea datelor din fisiere Excel (.xlsx)
+- **Java 17** — limbajul de bază
+- **JavaFX 17.0.2** — interfața grafică și graficele interactive
+- **Apache POI 5.2.3** — citirea datelor din fișiere Excel (.xlsx)
 - **iText 7.2.5** — generarea rapoartelor PDF
 - **Log4j 2.17.1** — jurnalizare
-- **Maven** — gestionarea dependentelor si build
-- Retea neuronala implementata manual (fara biblioteci externe de tip TensorFlow sau DeepLearning4J)
+- **Maven** — gestionarea dependențelor și build
+- Rețea neuronală implementată manual (fără biblioteci externe de tip TensorFlow sau DeepLearning4J)
 
 ---
 
@@ -48,112 +48,112 @@ Reteaua poate fi antrenata si reconfigurata direct din interfata (rata de invata
 
 ---
 
-## Cerinte de sistem
+## Cerințe de sistem
 
 - Sistem de operare **Windows 10 / 11** (64-bit)
-- Pentru rularea pachetului portabil: **nu este necesara nicio instalare prealabila** (Java este inclus in pachet)
-- Pentru rularea din codul sursa: **JDK 17** si **Maven** instalate
+- Pentru rularea pachetului portabil: **nu este necesară nicio instalare prealabilă** (Java este inclusă în pachet)
+- Pentru rularea din codul sursă: **JDK 17** și **Maven** instalate
 
 ---
 
-## Instalare si rulare (utilizator final)
+## Instalare și rulare (utilizator final)
 
-Aceasta este metoda recomandata pentru a folosi aplicatia fara a instala Java sau alte unelte.
+Aceasta este metoda recomandată pentru a folosi aplicația fără a instala Java sau alte unelte.
 
-1. Mergi la sectiunea **Releases** a acestui repository:
-   <!-- LINK: inlocuieste cu link-ul real catre Release, ex: https://github.com/Jhonny-Wf/NeuroCast/releases -->
-2. Descarca arhiva `NeuroCast-windows.zip`.
-3. Dezarhiveaza arhiva intr-un folder la alegere (de exemplu pe Desktop).
+1. Mergi la secțiunea **Releases** a acestui repository:
+   <!-- LINK: înlocuiește cu link-ul real către Release, ex: https://github.com/Jhonny-Wf/NeuroCast/releases -->
+2. Descarcă arhiva `NeuroCast-windows.zip`.
+3. Dezarhivează arhiva într-un folder la alegere (de exemplu pe Desktop).
 4. Deschide folderul `NeuroCast` rezultat.
-5. Dublu-click pe fisierul **`NeuroCast.exe`** pentru a porni aplicatia.
+5. Dublu-click pe fișierul **`NeuroCast.exe`** pentru a porni aplicația.
 
-La prima pornire, aplicatia afiseaza automat un ghid interactiv care prezinta principalele functionalitati.
+La prima pornire, aplicația afișează automat un ghid interactiv care prezintă principalele funcționalități.
 
 ---
 
-## Rulare din codul sursa (dezvoltator)
+## Rulare din codul sursă (dezvoltator)
 
-Daca vrei sa rulezi proiectul direct din cod:
+Dacă vrei să rulezi proiectul direct din cod:
 
-1. Asigura-te ca ai instalat **JDK 17** si **Maven**.
-2. Cloneaza repository-ul:
+1. Asigură-te că ai instalat **JDK 17** și **Maven**.
+2. Clonează repository-ul:
    ```
    git clone https://github.com/Jhonny-Wf/NeuroCast.git
    ```
-3. Intra in folderul proiectului:
+3. Intră în folderul proiectului:
    ```
    cd NeuroCast
    ```
-4. Ruleaza aplicatia cu Maven:
+4. Rulează aplicația cu Maven:
    ```
    mvn clean javafx:run
    ```
-   sau, daca folosesti plugin-ul exec configurat in proiect:
+   sau, dacă folosești plugin-ul exec configurat în proiect:
    ```
    mvn clean compile exec:java
    ```
 
-Clasa principala (entry point) este `ro.licenta.analiza.Launcher`.
+Clasa principală (entry point) este `ro.licenta.analiza.Launcher`.
 
 ---
 
 ## Ghidul interactiv pas cu pas
 
-La prima deschidere, aplicatia porneste automat un ghid interactiv format din 7 pasi. Ghidul poate fi reluat oricand din tab-ul **Despre**, prin optiunea **"Ruleaza ghidul interactiv"**.
+La prima deschidere, aplicația pornește automat un ghid interactiv format din 7 pași. Ghidul poate fi reluat oricând din tab-ul **Despre**, prin opțiunea **"Rulează ghidul interactiv"**.
 
 ### Pasul 1 — Bun venit
-Ecranul de intampinare prezinta scopul aplicatiei si te aduce pe Dashboard.
+Ecranul de întâmpinare prezintă scopul aplicației și te aduce pe Dashboard.
 
 ![Pasul 1 - Bun venit](screenshots/pas1-bun-venit.png)
 
-### Pasul 2 — Incarcarea datelor
-Din tab-ul **Gestiune & Antrenare** incarci istoricul vanzarilor dintr-un fisier Excel sau importi un model deja antrenat.
+### Pasul 2 — Încărcarea datelor
+Din tab-ul **Gestiune & Antrenare** încarci istoricul vânzărilor dintr-un fișier Excel sau imporți un model deja antrenat.
 
-![Pasul 2 - Incarcarea datelor](screenshots/pas2-incarcare-date.png)
+![Pasul 2 - Încărcarea datelor](screenshots/pas2-incarcare-date.png)
 
-### Pasul 3 — Antrenarea retelei
-Configurezi numarul de iteratii si functia de activare, apoi pornesti antrenarea retelei neuronale.
+### Pasul 3 — Antrenarea rețelei
+Configurezi numărul de iterații și funcția de activare, apoi pornești antrenarea rețelei neuronale.
 
-![Pasul 3 - Antrenarea retelei](screenshots/pas3-antrenare.png)
+![Pasul 3 - Antrenarea rețelei](screenshots/pas3-antrenare.png)
 
 ### Pasul 4 — Simulatorul de scenarii
-Ajustezi sliderele de buget de marketing si pret si urmaresti pe grafic cum se modifica venitul estimat.
+Ajustezi sliderele de buget de marketing și preț și urmărești pe grafic cum se modifică venitul estimat.
 
 ![Pasul 4 - Simulatorul de scenarii](screenshots/pas4-simulator.png)
 
-### Pasul 5 — Predictii inteligente
-Introduci un obiectiv de vanzari, iar modelul calculeaza automat combinatia optima de buget si pret pentru a-l atinge.
+### Pasul 5 — Predicții inteligente
+Introduci un obiectiv de vânzări, iar modelul calculează automat combinația optimă de buget și preț pentru a-l atinge.
 
-![Pasul 5 - Predictii inteligente](screenshots/pas5-predictii.png)
+![Pasul 5 - Predicții inteligente](screenshots/pas5-predictii.png)
 
 ### Pasul 6 — Dashboard-ul economic
-Vizualizezi grafic indicatorii economici si istoricul extras din fisierul Excel; poti filtra datele dupa an.
+Vizualizezi grafic indicatorii economici și istoricul extras din fișierul Excel; poți filtra datele după an.
 
 ![Pasul 6 - Dashboard economic](screenshots/pas6-dashboard.png)
 
 ### Pasul 7 — Exportul datelor
-Generezi un raport profesional in format PDF cu toate graficele, analizele si predictiile.
+Generezi un raport profesional în format PDF cu toate graficele, analizele și predicțiile.
 
 ![Pasul 7 - Exportul datelor](screenshots/pas7-export.png)
 
 ---
 
-## Formatul fisierului de date
+## Formatul fișierului de date
 
-Aplicatia citeste primul sheet dintr-un fisier Excel (.xlsx), incepand cu al doilea rand (primul rand este considerat antet). Coloanele asteptate sunt, in ordine:
+Aplicația citește primul sheet dintr-un fișier Excel (.xlsx), începând cu al doilea rând (primul rând este considerat antet). Coloanele așteptate sunt, în ordine:
 
 | Coloana | Index | Descriere |
 |---------|-------|-----------|
-| An | 0 | Anul inregistrarii |
+| An | 0 | Anul înregistrării |
 | Luna | 1 | Luna (1-12) |
 | Sezon | 2 | Sezonul (1-4) |
 | Buget marketing | 3 | Bugetul de marketing alocat |
-| Pret mediu | 4 | Pretul mediu de vanzare |
-| Vanzari | 5 | Vanzarile realizate (valoarea pe care modelul o invata) |
+| Preț mediu | 4 | Prețul mediu de vânzare |
+| Vânzări | 5 | Vânzările realizate (valoarea pe care modelul o învață) |
 
-![formatul fisierului Excel](screenshots/format_date.png)
+![formatul fișierului Excel](screenshots/format_date.png)
 
-Fisierul `date_fictive_vanzari_v1.xlsx` (cu date fictive) este inclus in repository pentru testare rapida. Il poti incarca direct din aplicatie, din tab-ul Gestiune & Antrenare.
+Fișierul `date_fictive_vanzari_v1.xlsx` (cu date fictive) este inclus în repository pentru testare rapidă. Îl poți încărca direct din aplicație, din tab-ul Gestiune & Antrenare.
 
 ---
 
@@ -162,14 +162,14 @@ Fisierul `date_fictive_vanzari_v1.xlsx` (cu date fictive) este inclus in reposit
 ```
 Sales_predictions_thesis_project/
 ├── src/main/java/ro/licenta/analiza/
-│   ├── Launcher.java          # Punctul de intrare al aplicatiei
-│   ├── DashboardApp.java      # Interfata grafica si logica aplicatiei
-│   ├── ReteaNeuronala.java    # Reteaua neuronala (forward, backpropagation)
-│   ├── Neuron.java            # Modelul unui neuron si functiile de activare
-│   ├── ManagerDate.java       # Citirea si normalizarea datelor din Excel
-│   └── Main.java              # Modul de antrenare din consola (optional)
-├── src/main/resources/        # Iconite, stiluri CSS
-├── pom.xml                    # Configuratia Maven
+│   ├── Launcher.java          # Punctul de intrare al aplicației
+│   ├── DashboardApp.java      # Interfața grafică și logica aplicației
+│   ├── ReteaNeuronala.java    # Rețeaua neuronală (forward, backpropagation)
+│   ├── Neuron.java            # Modelul unui neuron și funcțiile de activare
+│   ├── ManagerDate.java       # Citirea și normalizarea datelor din Excel
+│   └── Main.java              # Modul de antrenare din consolă (opțional)
+├── src/main/resources/        # Iconițe, stiluri CSS
+├── pom.xml                    # Configurația Maven
 └── README.md
 ```
 
@@ -182,7 +182,7 @@ Lupu Ion
 Proiect de licență dezvoltat în cadrul Universității Ștefan cel Mare din Suceava,
 Facultatea de Economie și Administrarea Afacerilor, specializarea Informatică Economică.
 
-Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) in managementul unei firme de succes
+Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) în managementul unei firme de succes
 Coordonator științific: Lect. univ. dr. Paul PAȘCU
 
 ## Licență
