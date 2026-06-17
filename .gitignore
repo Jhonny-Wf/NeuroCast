@@ -27,6 +27,9 @@ dist/
 NeuroCast/
 *.zip
 
+# ===== Unelte de build (Maven portabil - prea mare pentru repo) =====
+_buildtools/
+
 # ===== Sistem =====
 .DS_Store
 Thumbs.db

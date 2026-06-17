@@ -1,0 +1,27 @@
+NeuroCast - Sistem de previziune a vanzarilor cu Retele Neuronale Artificiale
+=============================================================================
+
+CUM PORNESTI APLICATIA
+----------------------
+Dublu-click pe fisierul NeuroCast.exe
+
+Nu este necesara instalarea Java sau a altor programe - totul este inclus.
+
+
+DATE DE TEST
+------------
+In acest folder se afla fisierul "date_fictive_vanzari.xlsx", un set de date
+fictiv pe care il poti incarca in aplicatie pentru testare.
+
+Pasi:
+  1. Porneste NeuroCast.exe
+  2. Mergi in tab-ul "Gestiune & Antrenare"
+  3. Incarca fisierul date_fictive_vanzari.xlsx
+  4. Antreneaza reteaua si exploreaza predictiile
+
+La prima pornire, aplicatia afiseaza automat un ghid interactiv pas cu pas.
+
+
+CERINTE
+-------
+Windows 10 / 11 (64-bit)
