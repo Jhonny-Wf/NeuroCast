@@ -266,9 +266,9 @@ public class DashboardApp extends Application {
         // incarcaIstoric();
         incarcaIstoric();
         incarcaUtilizatori();
-        
+
         // Acum ca am incarcat datele initiale, construim si afisam dashboard-ul
-        afiseazaDashboard(); 
+        afiseazaDashboard();
 
         // Verificam daca tutorialul a fost deja vazut (folosim v2 pentru reset fortat)
         boolean tutorialVazut = prefs.getBoolean("tutorialVazut_v2", false);
@@ -300,7 +300,8 @@ public class DashboardApp extends Application {
                 if (tabelFisierePersistent != null) {
                     tabelFisierePersistent.getItems().add(new FisierIncarcat(
                             sampleFile.getName(),
-                            new java.text.SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date(sampleFile.lastModified())),
+                            new java.text.SimpleDateFormat("dd/MM/yyyy")
+                                    .format(new java.util.Date(sampleFile.lastModified())),
                             sampleFile));
                 }
                 System.out.println("Fișier demo încărcat automat din locația aplicației.");
@@ -1689,12 +1690,14 @@ public class DashboardApp extends Application {
 
             if (lastRow != null) {
                 org.apache.poi.ss.usermodel.Cell cellVanzari = getCellSafely(lastRow, 5);
-                vanzariRealeLunaTrecuta = (cellVanzari != null && cellVanzari.getCellType() == CellType.NUMERIC) 
-                        ? cellVanzari.getNumericCellValue() : 0.0;
-                
+                vanzariRealeLunaTrecuta = (cellVanzari != null && cellVanzari.getCellType() == CellType.NUMERIC)
+                        ? cellVanzari.getNumericCellValue()
+                        : 0.0;
+
                 org.apache.poi.ss.usermodel.Cell cellLuna = getCellSafely(lastRow, 1);
-                int currentMonth = (cellLuna != null && cellLuna.getCellType() == CellType.NUMERIC) 
-                        ? (int) cellLuna.getNumericCellValue() : 1;
+                int currentMonth = (cellLuna != null && cellLuna.getCellType() == CellType.NUMERIC)
+                        ? (int) cellLuna.getNumericCellValue()
+                        : 1;
 
                 double avgBudget = (getCellSafely(lastRow, 3) != null) ? getCellSafely(lastRow, 3).getNumericCellValue()
                         : 5000;
@@ -3994,7 +3997,7 @@ public class DashboardApp extends Application {
             double sezonNorm = Math.min(Math.max(sezonDeBaza / rn.factorSezon, 0.0), 1.0);
             double bugetNorm = Math.min(Math.max(bugetScenariu / rn.factorBuget, 0.0), 1.0);
             double pretNorm = Math.min(Math.max(pretScenariu / rn.factorPret, 0.0), 1.0);
-            
+
             double[] inputScenariu = { lunaNorm, sezonNorm, bugetNorm, pretNorm };
             double[] predScenariu = rn.prezice(inputScenariu);
             double vanzariScenariu = predScenariu[0] * rn.factorVanzari;
@@ -7427,11 +7430,14 @@ public class DashboardApp extends Application {
                         +
                         "5. Export Documentație: Salvează raportul final sub formă de PDF pentru a-ți susține strategia în fața echipei.");
 
-        javafx.scene.control.Hyperlink btnRestartTutorial = new javafx.scene.control.Hyperlink("Rulează ghidul interactiv");
-        btnRestartTutorial.setStyle("-fx-text-fill: #3b82f6; -fx-font-weight: bold; -fx-underline: true; -fx-font-size: 14px;");
+        javafx.scene.control.Hyperlink btnRestartTutorial = new javafx.scene.control.Hyperlink(
+                "Rulează ghidul interactiv");
+        btnRestartTutorial
+                .setStyle("-fx-text-fill: #3b82f6; -fx-font-weight: bold; -fx-underline: true; -fx-font-size: 14px;");
         btnRestartTutorial.setOnAction(e -> {
-            // Când apasă, sărim direct în tabul Principal/Dashboard, pentru că acolo rulează ghidul
-            Button btnDash = (Button) sidebar.getChildren().get(1); 
+            // Când apasă, sărim direct în tabul Principal/Dashboard, pentru că acolo
+            // rulează ghidul
+            Button btnDash = (Button) sidebar.getChildren().get(1);
             btnDash.fire();
             pornesteTutorial();
         });

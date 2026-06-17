@@ -1,6 +1,6 @@
 # NeuroCast
 
-Sistem de previziune a vanzarilor bazat pe Retele Neuronale Artificiale (RNA), dezvoltat ca proiect de licenta. Aplicatia permite incarcarea istoricului de vanzari dintr-un fisier Excel, antrenarea unei retele neuronale direct din interfata si generarea de predictii economice si scenarii de tip "ce-ar fi daca", insotite de un dashboard interactiv si export de rapoarte.
+Sistem de previziune a vanzarilor bazat pe Retele Neuronale Artificiale (RNA), dezvoltat ca proiect de licenta. Aplicatia permite incarcarea istoricului de vanzari dintr-un fisier Excel, antrenarea unei retele neuronale direct din interfata si generarea de predictii economice și un simulator de scenarii, insotite de un dashboard interactiv si export de fișiere.
 
 ---
 
@@ -44,9 +44,7 @@ Reteaua poate fi antrenata si reconfigurata direct din interfata (rata de invata
 
 ## Capturi de ecran
 
-<!-- SCREENSHOT: Adauga aici o captura generala a aplicatiei (Dashboard la prima deschidere). Exemplu: ![Dashboard general](screenshots/dashboard.png) -->
-
-*(Capturi de ecran vor fi adaugate aici.)*
+![Dashboard general](screenshots/pas6-dashboard.png)
 
 ---
 
@@ -106,37 +104,37 @@ La prima deschidere, aplicatia porneste automat un ghid interactiv format din 7 
 ### Pasul 1 — Bun venit
 Ecranul de intampinare prezinta scopul aplicatiei si te aduce pe Dashboard.
 
-<!-- SCREENSHOT: captura cu pasul 1 al ghidului (ecranul de bun venit) -->
+![Pasul 1 - Bun venit](screenshots/pas1-bun-venit.png)
 
 ### Pasul 2 — Incarcarea datelor
 Din tab-ul **Gestiune & Antrenare** incarci istoricul vanzarilor dintr-un fisier Excel sau importi un model deja antrenat.
 
-<!-- SCREENSHOT: captura cu pasul 2 (incarcarea datelor) -->
+![Pasul 2 - Incarcarea datelor](screenshots/pas2-incarcare-date.png)
 
 ### Pasul 3 — Antrenarea retelei
 Configurezi numarul de iteratii si functia de activare, apoi pornesti antrenarea retelei neuronale.
 
-<!-- SCREENSHOT: captura cu pasul 3 (antrenarea retelei) -->
+![Pasul 3 - Antrenarea retelei](screenshots/pas3-antrenare.png)
 
 ### Pasul 4 — Simulatorul de scenarii
 Ajustezi sliderele de buget de marketing si pret si urmaresti pe grafic cum se modifica venitul estimat.
 
-<!-- SCREENSHOT: captura cu pasul 4 (simulator de scenarii) -->
+![Pasul 4 - Simulatorul de scenarii](screenshots/pas4-simulator.png)
 
 ### Pasul 5 — Predictii inteligente
 Introduci un obiectiv de vanzari, iar modelul calculeaza automat combinatia optima de buget si pret pentru a-l atinge.
 
-<!-- SCREENSHOT: captura cu pasul 5 (predictii inteligente) -->
+![Pasul 5 - Predictii inteligente](screenshots/pas5-predictii.png)
 
 ### Pasul 6 — Dashboard-ul economic
 Vizualizezi grafic indicatorii economici si istoricul extras din fisierul Excel; poti filtra datele dupa an.
 
-<!-- SCREENSHOT: captura cu pasul 6 (dashboard economic) -->
+![Pasul 6 - Dashboard economic](screenshots/pas6-dashboard.png)
 
 ### Pasul 7 — Exportul datelor
 Generezi un raport profesional in format PDF cu toate graficele, analizele si predictiile.
 
-<!-- SCREENSHOT: captura cu pasul 7 (export date) -->
+![Pasul 7 - Exportul datelor](screenshots/pas7-export.png)
 
 ---
 
