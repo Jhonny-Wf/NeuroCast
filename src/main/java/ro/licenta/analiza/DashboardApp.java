@@ -239,7 +239,7 @@ public class DashboardApp extends Application {
         contentArea.setStyle("-fx-background-color: #f4f7f6;");
         contentArea.setFitToWidth(true); // Ensure content stretches to fill width
 
-        afiseazaDashboard(); // Pornire pe Dashboard General
+        // afiseazaDashboard a fost mutat mai jos, dupa incarcarea istoricului
 
         Scene scene = new Scene(mainLayout, 1200, 900);
         try {
@@ -266,10 +266,12 @@ public class DashboardApp extends Application {
         // incarcaIstoric();
         incarcaIstoric();
         incarcaUtilizatori();
-        // actualizeazaSidebarBottom(); // Nu mai e nevoie, folosim butoane standard
+        
+        // Acum ca am incarcat datele initiale, construim si afisam dashboard-ul
+        afiseazaDashboard(); 
 
-        // Verificam daca tutorialul a fost deja vazut
-        boolean tutorialVazut = prefs.getBoolean("tutorialVazut", false);
+        // Verificam daca tutorialul a fost deja vazut (folosim v2 pentru reset fortat)
+        boolean tutorialVazut = prefs.getBoolean("tutorialVazut_v2", false);
         if (!tutorialVazut) {
             PauseTransition startDelay = new PauseTransition(Duration.millis(800));
             startDelay.setOnFinished(ev -> pornesteTutorial());
@@ -290,8 +292,21 @@ public class DashboardApp extends Application {
 
     private void incarcaIstoric() {
         File historyFile = new File("history.dat");
-        if (!historyFile.exists())
+        if (!historyFile.exists()) {
+            // Dacă e utilizator nou (fără istoric), căutăm datele de test implicite
+            File sampleFile = new File("date_fictive_vanzari_v1.xlsx");
+            if (sampleFile.exists() && !fisiereDateSelectate.contains(sampleFile)) {
+                fisiereDateSelectate.add(sampleFile);
+                if (tabelFisierePersistent != null) {
+                    tabelFisierePersistent.getItems().add(new FisierIncarcat(
+                            sampleFile.getName(),
+                            new java.text.SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date(sampleFile.lastModified())),
+                            sampleFile));
+                }
+                System.out.println("Fișier demo încărcat automat din locația aplicației.");
+            }
             return;
+        }
 
         try (java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.FileReader(historyFile))) {
             String line;
@@ -8627,7 +8642,7 @@ public class DashboardApp extends Application {
             // Salvăm că tutorialul a fost văzut
             java.util.prefs.Preferences prefs = java.util.prefs.Preferences
                     .userNodeForPackage(DashboardApp.class);
-            prefs.putBoolean("tutorialVazut", true);
+            prefs.putBoolean("tutorialVazut_v2", true);
 
             // Revenim la Dashboard
             afiseazaDashboard();
