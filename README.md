@@ -183,6 +183,7 @@ Proiect de licență dezvoltat în cadrul Universității "Ștefan cel Mare" din
 Facultatea de Economie și Administrarea Afacerilor, specializarea Informatică Economică.
 
 Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) în managementul unei firme de succes
+
 Coordonator științific: Lect. univ. dr. Paul PAȘCU
 
 ## Licență
