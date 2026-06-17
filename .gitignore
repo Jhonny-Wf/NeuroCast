@@ -1,0 +1,32 @@
+# ===== Compilări Maven =====
+target/
+
+# ===== Fișiere Java compilate =====
+*.class
+
+# ===== Fișiere de sesiune locale (generate la rulare) =====
+history.dat
+users.dat
+
+# ===== Rapoarte exportate de aplicație =====
+Export_*.pdf
+Export_*.csv
+Chart_*.pdf
+
+# ===== Fișiere IDE =====
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+
+# ===== Pachet generat (jpackage) =====
+dist/
+NeuroCast/
+*.zip
+
+# ===== Sistem =====
+.DS_Store
+Thumbs.db
