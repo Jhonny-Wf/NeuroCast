@@ -65,7 +65,7 @@ if errorlevel 1 ( echo [EROARE] jpackage a esuat. & pause & exit /b 1 )
 
 REM --- PAS 5: Adaugare fisiere extra langa exe ---
 echo [5/6] Adaug fisierul de date exemplu si instructiunile...
-if exist "date_fictive_vanzari.xlsx" copy /y "date_fictive_vanzari.xlsx" "dist\NeuroCast\" >nul
+if exist "date_fictive_vanzari_v1.xlsx" copy /y "date_fictive_vanzari_v1.xlsx" "dist\NeuroCast\" >nul
 if exist "CITESTE-MA.txt" copy /y "CITESTE-MA.txt" "dist\NeuroCast\" >nul
 
 REM --- PAS 6: Comprimare in zip ---
