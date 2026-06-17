@@ -179,7 +179,7 @@ Sales_predictions_thesis_project/
 
 Lupu Ion
 
-Proiect de licență dezvoltat în cadrul Universității Ștefan cel Mare din Suceava,
+Proiect de licență dezvoltat în cadrul Universității "Ștefan cel Mare" din Suceava,
 Facultatea de Economie și Administrarea Afacerilor, specializarea Informatică Economică.
 
 Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) în managementul unei firme de succes
