@@ -186,9 +186,12 @@ Facultatea de Economie și Administrarea Afacerilor, specializarea Informatică 
 Tema lucrării: Rolul RNA (rețelelor neuronale artificiale) în managementul unei firme de succes
 Coordonator științific: Lect. univ. dr. Paul PAȘCU
 
+---
+
 ## Licență
 
 © 2026 Lupu Ion. Toate drepturile rezervate.
 
 Acest proiect a fost realizat ca parte a unei lucrări de licență și este publicat
-în scop educațional și demonstrativ.
+în scop educațional și demonstrativ. Codul poate fi consultat liber, însă
+reproducerea, distribuirea sau reutilizarea sa fără acordul autorului nu este permisă.
