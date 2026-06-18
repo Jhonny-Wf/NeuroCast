@@ -44,7 +44,7 @@ Rețeaua poate fi antrenată și reconfigurată direct din interfață (rata de 
 
 ## Capturi de ecran
 
-![Dashboard general](screenshots/pas6-dashboard.png)
+![Dashboard general](screenshots/dashboard.png)
 
 ---
 
