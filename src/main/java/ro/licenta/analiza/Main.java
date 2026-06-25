@@ -15,8 +15,7 @@ public class Main {
 
             // 3. Antrenare
             System.out.println("Începe antrenarea rețelei...");
-            rn.antreneaza(manager.intrari, manager.tinte, 100000); // 10.000.000/ 100.000 / 10.000 epoci pentru precizie
-                                                                   // [cite: 364]
+            rn.antreneaza(manager.intrari, manager.tinte, 100000);
 
             // 4. Testare "What-if"
             System.out.println("\n--- Simulare Managerială: Buget crescut în Iulie ---");

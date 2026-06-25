@@ -2,7 +2,7 @@ package ro.licenta.analiza;
 
 public class ReteaNeuronala implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
-    // Declarații la nivel de clasă (nu vor mai fi cu roșu)
+
     private Neuron[] stratAscuns;
     private Neuron[] stratIesire;
     private double rataInvatare = 0.05;
@@ -118,8 +118,7 @@ public class ReteaNeuronala implements java.io.Serializable {
         }
     }
 
-    // Metodă nouă pentru a calcula eroarea pe un set de date (FĂRĂ antrenare)
-    // Utila pentru setul de validare
+    // Calculează eroarea medie pe un set de date fără a antrena (folosită la validare)
     public double calculeazaEroare(double[][] date, double[][] tinte) {
         double eroareTotala = 0;
         for (int i = 0; i < date.length; i++) {
@@ -170,7 +169,6 @@ public class ReteaNeuronala implements java.io.Serializable {
         }
     }
 
-    // Adaugă aceste rânduri la finalul clasei ReteaNeuronala
     public Neuron[] getStratIesire() {
         return stratIesire;
     }

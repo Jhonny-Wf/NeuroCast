@@ -40,7 +40,7 @@ public class ManagerDate {
 
             System.out.println("DEBUG: Max Vanzari detected: " + maxVanzari); 
 
-            // Safety check
+            // Valoare implicită dacă nu s-a detectat niciun maxim valid
             if (maxVanzari == 0)
                 maxVanzari = 50000;
 
@@ -55,13 +55,12 @@ public class ManagerDate {
                         double vanzari = getCellValue(row, 5);
 
 
-                        // FIX: Skip rows with zero or invalid sales
+                        // Sărim peste rândurile fără vânzări valide
                         if (vanzari <= 0.001) {
-                            continue; 
+                            continue;
                         }
- 
-                        // Normalizare (folosind maxVanzari detectat)
 
+                        // Normalizare în intervalul [0,1]
                         double[] in = new double[4];
                         in[0] = luna / 12.0;
                         in[1] = sezon / 4.0;
@@ -70,15 +69,10 @@ public class ManagerDate {
                         double[] out = new double[1];
                         out[0] = vanzari / maxVanzari;
 
-                        // DEBUG TRACE
-                        // if (i < 10)
-                        // System.out.println("DEBUG: Row " + i + " Vanzari=" + vanzari + " Norm=" +
-                        // out[0]);
- 
                         inputList.add(in);
                         targetList.add(out);
                     } catch (Exception ex) {
-                        // Skip
+                        // Ignorăm rândurile care nu pot fi citite
                     }
                 }
             }
@@ -110,7 +104,7 @@ public class ManagerDate {
 
 
 
-            // Safety check if maxVanzari was not updated
+            // Valoare implicită dacă maxVanzari a rămas neactualizat
             if (maxVanzari == 0)
                 maxVanzari = 50000;
 

@@ -360,10 +360,7 @@ public class DashboardApp extends Application {
         brandingBox.setPadding(new Insets(5, 15, 20, 20)); // Align with buttons (20px left padding)
         brandingBox.setMinHeight(60); // Prevent vertical jump when title is hidden
 
-        // Icon Branding
-        // User requested: "artificial-intelligence"
-        // Icon Branding
-        // User requested: "artificial-intelligence" - ORIGINAL SIZE
+        // Iconița de brand (dimensiune originală)
         brandIconView = incarcaIcon("artificial-intelligence.png", 0);
 
         // Title & Subtitle Container
@@ -392,7 +389,6 @@ public class DashboardApp extends Application {
         toggleButton.setMaxWidth(Double.MAX_VALUE);
         toggleButton.setAlignment(Pos.CENTER_LEFT);
 
-        // User requested menu icon provided: "menu-burger.png"
         ImageView menuIcon = incarcaIcon("menu-burger.png", 0);
         if (menuIcon != null) {
             toggleButton.setGraphic(menuIcon);
@@ -605,8 +601,6 @@ public class DashboardApp extends Application {
         }
         return null; // Return null to allow caller to handle fallback
     }
-
-    // ... (rest of code) ...
 
     private void generareRaportPDF() {
         if (selectedReportType == null)
@@ -1780,9 +1774,6 @@ public class DashboardApp extends Application {
 
         // Style KPIs for print (border, clean look)
         // Style KPIs for print (border, clean look)
-        // creeazaCardKPIExport already sets style, but we can override if needed.
-        // Actually, let's trust the export card style.
-
         // Make KPIs grow to fill width
         HBox.setHgrow(kpiTotal, Priority.ALWAYS);
         HBox.setHgrow(kpiAvg, Priority.ALWAYS);
